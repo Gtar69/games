@@ -1,0 +1,9 @@
+1.  simple backend 
+ ☐ log-in system can distinguish users as administrator and general users.
+ ☐ The backend website only can be accessed by administrator.
+ ☐ Admin can upload games(products) at the backend websites.
+ ☐ A product should have it's own title, description and pictures.
+ ☐ products/new, products/index, products/show implementation
+2. simple front-end 
+ ☐ Customers can browse through this website and find 4x4 grid selection of games.
+ ☐ product/show represents entrance for particular game 
