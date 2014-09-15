@@ -1,0 +1,7 @@
+<h2>New Prodcut Upload</h2>
+
+<%= simple_form_for [:admin, @product] do|f|%>
+  <%= f.input :title %>
+  <%= f.input :description, :as => :text %>
+<%= f.submit "Submit" %>
+<% end %>
