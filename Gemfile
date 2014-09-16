@@ -29,7 +29,8 @@ gem 'spring',        group: :development
 gem "simple_form", "3.1.0rc1"
 gem "bootstrap-sass"
 gem "devise"
-
+gem "carrierwave"
+gem "mini_magick"
 
 group :development do
   gem "annotate"

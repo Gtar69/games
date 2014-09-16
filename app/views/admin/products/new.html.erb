@@ -1,7 +1,16 @@
-<h2>New Prodcut Upload</h2>
+<h2>New Game Upload</h2>
 
-<%= simple_form_for [:admin, @product] do|f|%>
-  <%= f.input :title %>
+<%= simple_form_for [:admin, @product], :html => { :class => "form form-horizontal"  } do|f|%>
+
+<div class="form-group">
+  <div class="col-sm-4">
+    <%= f.input :title %>
+  </div>
+</div>
+<div class="form-group">
+   <div class="col-sm-4">
   <%= f.input :description, :as => :text %>
-<%= f.submit "Submit" %>
+  </div>
+</div>
+<%= f.submit "Submit",:class => "btn btn-default" , :disable_with => 'Submiting...'  %>
 <% end %>

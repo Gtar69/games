@@ -3,9 +3,11 @@
  ✔ A product should have it's own title, description. @done (14-09-16 10:09)
  ☐ A product has it's own pictures. (phtoto model)
  ✔ log-in system can distinguish users as administrator and general users.  (admin/products) @done (14-09-15 18:08)
- ☐ The backend website only can be accessed by administrator.
- ☐ products/new, products/index, products/show implementation
- ☐ implenmenting bootstrap navbar for log-in system
+ ✔ The backend website only can be accessed by administrator. @done (14-09-16 14:05)
+ ✔ products/new    @done (14-09-16 14:20)
+ ✔ products/index  @done (14-09-16 14:20)
+ ☐ products/show
+ ✔ implementation of bootstrap navbar for log-in system @done (14-09-16 14:21)
 
 2. simple front-end
  ☐ Customers can browse through this website and find 4x4 grid selection of games.
