@@ -1,7 +1,7 @@
 1.  simple backend
  ✔ Administrator can upload games(products) at the backend websites. @done (14-09-15 18:08)
  ✔ A product should have it's own title, description. @done (14-09-16 10:09)
- ☐ A product has it's own pictures. (phtoto model)
+ ✔ A product has it's own pictures. (phtoto model) @done (14-09-16 14:59)
  ✔ log-in system can distinguish users as administrator and general users.  (admin/products) @done (14-09-15 18:08)
  ✔ The backend website only can be accessed by administrator. @done (14-09-16 14:05)
  ✔ products/new    @done (14-09-16 14:20)
@@ -10,12 +10,12 @@
  ✔ implementation of bootstrap navbar for log-in system @done (14-09-16 14:21)
 
 2. simple front-end
- ☐ Customers can browse through this website and find 4x4 grid selection of games.
- ☐ product/show represents entrance for particular game
+ ☐ Users can see all games in the website. (product/index)
+ ☐ Each game picture represents "specific entry for a game". (product/show)
 
 3. aethestic concern
  ☐ bootstrap navbar for login/out
- ☐
+ ☐ Administrator has his own panel.
 
 4. to be continued...
  ☐

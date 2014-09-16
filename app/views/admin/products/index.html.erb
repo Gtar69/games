@@ -1,14 +1,30 @@
+
 <h2>Game Lists</h2>
 
-<% @products.each do |product| %>
 <div class="pull-right" style="padding-bottom: 20px;">
   <%= link_to("新增產品", new_admin_product_path, :class => "btn btn-primary btn-sm") %>
 </div>
 
+
+
+
 <table class="table table-bordered">
   <thead>
     <tr>
-      <td> <%= product.id %>
-      <td> <%= link_to(product.title, admin_product_path(product)) %> </td>
+      <td>ID </td>
+      <td>Game</td>
+      <td>Content Description</td>
     </tr>
-<% end %>
+  </thead>
+  <tbody>
+  <% @products.each do |product| %>
+    <tr>
+      <td> <%= product.id %></td>
+      <td> <%= link_to(product.title, admin_product_path(product)) %> </td>
+      <td>
+        <%= render_product_photo(product.default_photo) %>
+      </td>
+    </tr>
+  </tbody>
+  <% end %>
+</table>
