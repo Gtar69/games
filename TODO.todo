@@ -10,12 +10,13 @@
  ✔ implementation of bootstrap navbar for log-in system @done (14-09-16 14:21)
 
 2. simple front-end
- ☐ Users can see all games in the website. (product/index)
+ ✔ Users can see all games in the website. @done (14-09-16 17:17)
  ☐ Each game picture represents "specific entry for a game". (product/show)
 
 3. aethestic concern
- ☐ bootstrap navbar for login/out
- ☐ Administrator has his own panel.
+ ✔ bootstrap navbar for login/out @done (14-09-16 17:23)
+ ✔ Administrator has his own panel directed to "admin/products" @done (14-09-16 17:22)
 
 4. to be continued...
+ ☐ deploy this rails application to AWS
  ☐

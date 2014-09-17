@@ -36,6 +36,9 @@ group :development do
   gem "annotate"
 end
 
+gem 'capistrano', '~> 3.2.0'
+gem 'capistrano-ext'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
