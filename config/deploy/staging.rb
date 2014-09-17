@@ -19,7 +19,7 @@ server '54.241.249.27', user: 'ubuntu', roles: %w{web app}, my_property: :my_val
 
 
 set :ssh_options, {
-  keys: [ File.join(ENV['HOME'], '.ssh', '~/.ssh/AndroidCast.pem')],
+  keys: ["~/.ssh/AndroidCast.pem"],
   forward_agent: true
 }
 
