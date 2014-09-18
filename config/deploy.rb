@@ -4,12 +4,10 @@ lock '3.2.1'
 
 set :application, 'GameStore'
 set :scm, :git
-set :repo_url, 'git@gtihub.com:Gtar69/games.git'
-set :deploy_to, '/home/ubuntu'
-set :rails_env, "development"
+set :repository, 'http://github.com/Gtar69/games'
+set :deploy_to, '/home/gamestore'
+set :rails_env, "production"
 set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
-set :log_level, :debug
-set :port, "22"
 
 # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
