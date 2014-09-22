@@ -1,7 +1,7 @@
 <div class="panel panel-default">
 
   <div class="panel-heading">
-    <h3 class="panel-title">New Game Upload</h3>
+    <h3 class="panel-title">Edit Game Information</h3>
   </div>
 
   <div class="panel-body">
@@ -19,14 +19,6 @@
     </div>
   </div>
 
-  <div class="form-group">
-    <div class="col-sm-2">
-      <%= f.simple_fields_for :photos do |c| %>
-        <% c.input :image, :as => :file %>
-      <% end %>
-    </div>
-  </div>
-
   <div class ="form-group">
     <div calss ="col-sm-2">
       <%= f.submit "Submit",:class => "btn btn-default" , :disable_with => 'Submiting...'  %>
@@ -35,4 +27,3 @@
 
   <% end %>
 </div>
-

@@ -17,10 +17,15 @@
  ✔ bootstrap navbar for login/out @done (14-09-16 17:23)
  ✔ Administrator has his own panel directed to "admin/products" @done (14-09-16 17:22)
 
-4. Backent feature improvements
- ☐
- ☐
- ☐
+4. Backend improvements
+ ✔ form_for / simple_form  @done (14-09-22 14:19)
+ ✔  products/edit @done (14-09-22 15:13)
+ ✔  products/destroy @done (14-09-22 15:21)
+ ✔  some notice function implementation @done (14-09-22 16:04)
+ ☐  products/show
+ ☐  Facebook log in/out
+ ☐  multiple photos uploading for one game?
+ ☐  Twitter log in/out
 
 
 5. to be continued...

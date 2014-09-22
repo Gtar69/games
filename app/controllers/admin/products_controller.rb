@@ -25,10 +25,30 @@ class Admin::ProductsController < ApplicationController
     end
 	end
 
+  def edit
+    @product = Product.find(params[:id])
+  end
+
+  def update
+    @product = Product.find(params[:id])
+    if @product.update(product_params)
+      redirect_to admin_products_path
+    else
+      render :new
+    end
+  end
+
+  def destroy
+    @product = Product.find(params[:id])
+    @product.destroy!
+    flash[:notice] = "ddeokdoekdo"
+    redirect_to admin_products_path
+  end
+
   private
 
   def product_params
-    params.require(:product).permit(:title, :decription, :photos_attributes => [:image])
+    params.require(:product).permit(:title, :description, :photos_attributes => [:image])
   end
 
 end

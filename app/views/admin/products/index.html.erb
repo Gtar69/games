@@ -2,7 +2,7 @@
 <h2>Game Lists</h2>
 
 <div class="pull-right" style="padding-bottom: 20px;">
-  <%= link_to("新增產品", new_admin_product_path, :class => "btn btn-primary btn-sm") %>
+  <%= link_to("遊戲上架", new_admin_product_path, :class => "btn btn-primary btn-sm") %>
 </div>
 
 <table class="table table-bordered">
@@ -11,6 +11,8 @@
       <td>ID </td>
       <td>Game</td>
       <td>Content Description</td>
+      <td>Manage Content</td>
+      <td>Remove Game</td>
     </tr>
   </thead>
   <tbody>
@@ -21,6 +23,8 @@
       <td>
         <%= render_product_photo(product.default_photo) %>
       </td>
+      <td><%= link_to("Edit",edit_admin_product_path(product), :class => "btn btn-primary btn-sm") %></td>
+      <td><%= link_to("Remove", admin_product_path(product),:method => "delete",:class => "btn btn-danger btn-sm" )%></td>
     </tr>
   </tbody>
   <% end %>
