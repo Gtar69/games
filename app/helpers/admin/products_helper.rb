@@ -4,7 +4,8 @@ module Admin::ProductsHelper
     if photo.present?
       image_tag(photo.image.url, :class => "thumbnail", :size => "200x150")
     else
-      "no pic"
+      #placeholder for 4 by 4 gird
+      image_tag("http://placehold.it/200x150",:class => "thumbnail")
     end
   end
 
