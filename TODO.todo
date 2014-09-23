@@ -28,7 +28,7 @@
 
 5. Simulation of "server node" request to "server node mgmt server"(14-09-23)
  ☐  Server node "submit a request" which stands for server status to mgmt server. (need another rails application)
-       ☐
+       ☐ build another rails project simulate "Android Server Node"
        ☐
  ☐  Mgmt server receive the request and update status of Server node.
        ✔ Administrator can set up servernode at mgnt server. @done (14-09-23 13:49)
@@ -36,6 +36,7 @@
        ✔ A servernode have it's own "name" and "status" @done (14-09-23 13:49)
        ✔ "status" includes available, occupied and dump. @done (14-09-23 13:49)
        ✔ servernode/index @done (14-09-23 13:49)
+       ✔  servernode/edit @done (14-09-23 14:26)
 
 6. to be continued...
  ☐ deploy to AWS EC2

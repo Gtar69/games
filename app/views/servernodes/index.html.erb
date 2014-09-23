@@ -5,6 +5,7 @@
     <tr>
       <td> <strong> Server </strong> </td>
       <td> <strong> Status</strong></td>
+      <td> <strong> Change Status </strong>
 
     </tr>
   </thead>
@@ -15,6 +16,8 @@
     <tr>
       <td> <%= f.name %> </td>
       <td><%= f.status %> </td>
+      <td><%= link_to("Change Server Status", edit_servernode_path(f),
+        :class => "btn btn-primary btn-sm") %></td>
     </tr>
 
   </tbody>
