@@ -18,17 +18,26 @@
  ✔ Administrator has his own panel directed to "admin/products" @done (14-09-16 17:22)
 
 4. Backend improvements
- ✔ form_for / simple_form  @done (14-09-22 14:19)
+ ✔  form_for / simple_form  @done (14-09-22 14:19)
  ✔  products/edit @done (14-09-22 15:13)
  ✔  products/destroy @done (14-09-22 15:21)
  ✔  some notice function implementation @done (14-09-22 16:04)
  ☐  products/show
- ☐  Facebook log in/out
  ☐  multiple photos uploading for one game?
  ☐  Twitter log in/out
 
+5. Simulation of "server node" request to "server node mgmt server"(14-09-23)
+ ☐  Server node "submit a request" which stands for server status to mgmt server. (need another rails application)
+       ☐
+       ☐
+ ☐  Mgmt server receive the request and update status of Server node.
+       ✔ Administrator can set up servernode at mgnt server. @done (14-09-23 13:49)
+       ✔ servernode/new @done (14-09-23 13:49)
+       ✔ A servernode have it's own "name" and "status" @done (14-09-23 13:49)
+       ✔ "status" includes available, occupied and dump. @done (14-09-23 13:49)
+       ✔ servernode/index @done (14-09-23 13:49)
 
-5. to be continued...
- ☐ deploy this rails application to AWS
+6. to be continued...
+ ☐ deploy to AWS EC2
  ☐
 

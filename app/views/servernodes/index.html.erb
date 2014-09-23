@@ -1,0 +1,23 @@
+<h3>Android Server Node Lists</h3>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <td> <strong> Server </strong> </td>
+      <td> <strong> Status</strong></td>
+
+    </tr>
+  </thead>
+  <tbody>
+
+    <% @servernodes.each do |f|%>
+
+    <tr>
+      <td> <%= f.name %> </td>
+      <td><%= f.status %> </td>
+    </tr>
+
+  </tbody>
+  <% end %>
+
+</table>
