@@ -1,7 +1,7 @@
 class ServernodesController < ApplicationController
   #protect_from_forgery with: :null_session
   #skip_before_filter :verify_authenticity_token
-  skip_before_filter :verify_authenticity_token, :only => :create
+  skip_before_filter :verify_authenticity_token, :only => [:create, :update]
   def index
     @servernodes = Servernode.all
   end
@@ -14,7 +14,8 @@ class ServernodesController < ApplicationController
     @servernode = Servernode.create(:name => params[:servernode][:name],
       :status => params[:servernode][:status])
     if @servernode.save
-      redirect_to servernodes_path
+      #redirect_to servernodes_path
+      render :nothing => true
     else
       render :new
     end
@@ -27,7 +28,7 @@ class ServernodesController < ApplicationController
   def update
     @servernode = Servernode.find(params[:id])
     if @servernode.update(:name=>params[:servernode][:name],:status =>params[:servernode][:status] )
-      redirect_to servernodes_path
+      render :nothing => true
     else
       render :edit
     end
