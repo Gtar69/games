@@ -1,8 +1,9 @@
 <h3>Android Server Node Lists</h3>
 
-<table class="table table-bordered">
+<table class="table table-bordered" >
   <thead>
     <tr>
+      <td> <strong> ID </strong> </td>
       <td> <strong> Server </strong> </td>
       <td> <strong> Status</strong></td>
       <td> <strong> Change Status </strong>
@@ -14,6 +15,7 @@
     <% @servernodes.each do |f|%>
 
     <tr>
+      <td> <%= f.id %> </td>
       <td> <%= f.name %> </td>
       <td><%= f.status %> </td>
       <td><%= link_to("Change Server Status", edit_servernode_path(f),
