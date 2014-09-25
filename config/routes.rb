@@ -10,7 +10,12 @@ Rails.application.routes.draw do
     resources :products
   end
 
-  resources :products
+  resources :products do
+    member do
+      get :play_game
+    end
+  end
+
   resources :servernodes
 
   root :to => "products#index"

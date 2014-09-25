@@ -1,7 +1,9 @@
 class ServernodesController < ApplicationController
-  #protect_from_forgery with: :null_session
-  #skip_before_filter :verify_authenticity_token
+
+  #before_action :authenticate_user!
+  #before_action :admin_required
   skip_before_filter :verify_authenticity_token, :only => [:create, :update]
+
   def index
     @servernodes = Servernode.all
   end
@@ -11,10 +13,12 @@ class ServernodesController < ApplicationController
   end
 
   def create
+    #puts "Begin request test"
+    #puts "ip is #{request.remote_ip}"
     @servernode = Servernode.create(:name => params[:servernode][:name],
       :status => params[:servernode][:status])
+    @servernode.ip_address = request.remote_ip
     if @servernode.save
-      #redirect_to servernodes_path
       render :nothing => true
     else
       render :new

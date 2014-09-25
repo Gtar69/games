@@ -4,10 +4,11 @@
   <thead>
     <tr>
       <td> <strong> ID </strong> </td>
-      <td> <strong> Server </strong> </td>
+      <td> <strong> Server Name</strong> </td>
+      <td> <strong> IP </strong></td>
       <td> <strong> Status</strong></td>
-      <td> <strong> Change Status </strong>
-
+      <td> <strong> User ID </strong> </td>
+      <td> <strong> Change Status </strong> </td>
     </tr>
   </thead>
   <tbody>
@@ -17,7 +18,9 @@
     <tr>
       <td> <%= f.id %> </td>
       <td> <%= f.name %> </td>
+      <td><%= f.ip_address %> </td>
       <td><%= f.status %> </td>
+      <td><%= f.user_id %> </td>
       <td><%= link_to("Change Server Status", edit_servernode_path(f),
         :class => "btn btn-primary btn-sm") %></td>
     </tr>

@@ -11,7 +11,6 @@
 
 2. simple front-end
  ✔ Users can see all games in the website. @done (14-09-16 17:17)
- ☐ Each game picture represents "specific entry for a game". (product/show)
 
 3. aethestic concern
  ✔ bootstrap navbar for login/out @done (14-09-16 17:23)
@@ -28,17 +27,29 @@
 
 5. Simulation of "server node" request to "server node mgmt server"(14-09-23)
  ☐  Server node "submit a request" which stands for server status to mgmt server. (need another rails application)
-       ☐ build another rails project simulate "Android Server Node"
-       ☐
+       ✔ build another rails project simulate "Android Server Node" @done (14-09-24 18:14)
+
  ☐  Mgmt server receive the request and update status of Server node.
        ✔ Administrator can set up servernode at mgnt server. @done (14-09-23 13:49)
        ✔ servernode/new @done (14-09-23 13:49)
        ✔ A servernode have it's own "name" and "status" @done (14-09-23 13:49)
        ✔ "status" includes available, occupied and dump. @done (14-09-23 13:49)
        ✔ servernode/index @done (14-09-23 13:49)
-       ✔  servernode/edit @done (14-09-23 14:26)
+       ✔ servernode/edit @done (14-09-23 14:26)
 
-6. to be continued...
+6.  new spec
+ ✔ Each game represents "specific entry for a game". (products/show) @done (14-09-25 12:38)
+ ✔ products/:id  have a entry for playing the game @done (14-09-25 12:38)
+ ✔ When user press "Play Game Now" button, mgmt server will dispatch "random one available node sever" to user. @done (14-09-25 14:59)
+      ✔ look up all servernodes to find one of available nodes randomly  @done (14-09-25 14:29)
+      ✔ The assigned node server status transist from "Available" to "Ready." @done (14-09-25 14:29)
+ ✔ only registered and log-in user can play the game @done (14-09-25 15:57)
+
+7. Improvement
+ ☐ ip restriction for severnode update
+
+
+
+100. to be continued...
  ☐ deploy to AWS EC2
  ☐
-
