@@ -45,8 +45,11 @@
       ✔ The assigned node server status transist from "Available" to "Ready." @done (14-09-25 14:29)
  ✔ only registered and log-in user can play the game @done (14-09-25 15:57)
 
-7. Improvement
- ☐ ip restriction for severnode update
+7. API implenmentation
+ ☐ Now, we don't want to create/update servernode "on both sides". In that way,  in Mgmt server, it will ask Android Node for server name, status and ip by Ajax request behind the scence instead of direct http call.
+ ☐ products/play_game modification: for particular user, it means we have to hold stat "ready"
+
+
 
 
 

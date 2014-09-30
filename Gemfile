@@ -37,7 +37,7 @@ gem 'oauth2'
 gem 'certified'
 gem 'pry'
 gem 'pry-byebug'
-
+gem 'rest-client'
 group :development do
   gem "annotate"
 end

@@ -3,9 +3,12 @@ class ServernodesController < ApplicationController
   #before_action :authenticate_user!
   #before_action :admin_required
   skip_before_filter :verify_authenticity_token, :only => [:create, :update]
+  require 'rest-client'
 
   def index
     @servernodes = Servernode.all
+    #response = RestClient.get 'http://localhost:3001/submitforms.json'
+    #@servernodes = JSON.parse(response)
   end
 
   def new
@@ -13,8 +16,6 @@ class ServernodesController < ApplicationController
   end
 
   def create
-    #puts "Begin request test"
-    #puts "ip is #{request.remote_ip}"
     @servernode = Servernode.create(:name => params[:servernode][:name],
       :status => params[:servernode][:status])
     @servernode.ip_address = request.remote_ip
