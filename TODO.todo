@@ -49,6 +49,8 @@
  ☐ Now, we don't want to create/update servernode "on both sides". In that way,  in Mgmt server, it will ask Android Node for server name, status and ip by Ajax request behind the scence instead of direct http call.
  ☐ products/play_game modification: for particular user, it means we have to hold stat "ready"
 
+8.
+ ☐ player refresh web page behavior?
 
 
 

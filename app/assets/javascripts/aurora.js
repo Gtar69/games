@@ -1,13 +1,11 @@
 console.log("Im going to be superb!");
-console.log("my boy");
 
-function test(){
-  document.getElementById("test").innerHTML = "What the fuck222!";
-  console.log(document.getElementById("remote_ip").textContent);
-}()
 
 
 (function() {
+  //10022014 add for call or not
+  console.log("my aurona.js boy here?" );
+
   var global;
   global = this;
   var AV;
@@ -3106,7 +3104,8 @@ AV.HTTPSource = (function(_super) {
   };
 
   HTTPSource.prototype.loop = function() {
-
+    //10022014 test for "call or not"
+    console.log("test aurona.js");
   	var connection;
     try {
        connection = new WebSocket('ws://10.0.0.102:80/stream');
