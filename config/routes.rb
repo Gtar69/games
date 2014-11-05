@@ -10,6 +10,8 @@ Rails.application.routes.draw do
     resources :products
   end
 
+  #match '/contact', to: 'about#new', via: 'get', as: 'contact_new'
+
   resources :products do
     member do
       get :play_game

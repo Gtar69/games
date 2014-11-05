@@ -21,9 +21,7 @@
  ✔  products/edit @done (14-09-22 15:13)
  ✔  products/destroy @done (14-09-22 15:21)
  ✔  some notice function implementation @done (14-09-22 16:04)
- ☐  products/show
- ☐  multiple photos uploading for one game?
- ☐  Twitter log in/out
+
 
 5. Simulation of "server node" request to "server node mgmt server"(14-09-23)
  ☐  Server node "submit a request" which stands for server status to mgmt server. (need another rails application)
@@ -46,15 +44,20 @@
  ✔ only registered and log-in user can play the game @done (14-09-25 15:57)
 
 7. API implenmentation
- ☐ Now, we don't want to create/update servernode "on both sides". In that way,  in Mgmt server, it will ask Android Node for server name, status and ip by Ajax request behind the scence instead of direct http call.
- ☐ products/play_game modification: for particular user, it means we have to hold stat "ready"
+ ✔ Now, we don't want to create/update servernode "on both sides". In that way,  in Mgmt server, it will ask Android Node for server name, status and ip by Ajax request behind the scence instead of direct http call. @done (14-10-06 11:54)
+ ✔ products/play_game modification: for particular user, it means we have to hold stat "ready" @done (14-10-06 11:54)
 
-8.
- ☐ player refresh web page behavior?
+8. extras
+ ✔ Using Mysql instead of sqlite @done (14-10-09 14:51)
 
+9. current cast streaming server has ability to save the game locally after the player finished playing a game. We don't want to save it locally, we want to save it to database server
 
-
-
-100. to be continued...
- ☐ deploy to AWS EC2
+10. need to establish a game id, name, application path, ..etc. database table during the game onboarding process.
+ ✔ Using many to many relationship between game and user through "game_data" model @done (14-11-05 13:37)
+ ☐ game_data should have one zip file which represented for current progress of player in the game
  ☐
+ ☐ game information included id, name, and saved_data should pass to Andorid node during the game onboarding process
+ ☐ If a user play game first, the zip file will be ??
+
+201. SSL certificate
+ ☐ Andorid node server should have an SSL certifcate with Mgmt server to update "current status" of node server. (need to identify via http or websocket)

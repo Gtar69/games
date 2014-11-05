@@ -4,8 +4,8 @@ lock '3.2.1'
 
 set :application, 'GameStore'
 set :scm, :git
-set :repository, 'http://github.com/Gtar69/games'
-set :deploy_to, '/home/gamestore'
+set :repo_url, 'http://github.com/Gtar69/games'
+set :deploy_to, '/home/ubuntu/gamestore'
 set :rails_env, "production"
 set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
 

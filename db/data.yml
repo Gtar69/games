@@ -1,0 +1,115 @@
+
+---
+products:
+  columns:
+  - id
+  - title
+  - description
+  - created_at
+  - updated_at
+  - user_id
+  records: 
+  - - 11
+    - Street Fighter
+    - 'is now on sale ! '
+    - '2014-09-22 08:10:02.861036'
+    - '2014-09-22 08:10:02.861036'
+    - 
+  - - 12
+    - Street Fighter
+    - super classic game!
+    - '2014-09-23 03:06:52.960396'
+    - '2014-09-25 08:05:48.087813'
+    - 
+  - - 13
+    - Team Capcom
+    - super cool! try it!
+    - '2014-09-25 08:05:19.826725'
+    - '2014-09-25 08:05:19.826725'
+    - 
+
+---
+photos:
+  columns:
+  - id
+  - image
+  - product_id
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - 3fb44c629207ccdd8ab742c1753de662.jpg
+    - 12
+    - '2014-09-23 03:06:52.961385'
+    - '2014-09-23 03:06:52.961385'
+  - - 2
+    - teamcapcom.jpg
+    - 13
+    - '2014-09-25 08:05:19.827624'
+    - '2014-09-25 08:05:19.827624'
+
+---
+users:
+  columns:
+  - id
+  - email
+  - encrypted_password
+  - reset_password_token
+  - reset_password_sent_at
+  - remember_created_at
+  - sign_in_count
+  - current_sign_in_at
+  - last_sign_in_at
+  - current_sign_in_ip
+  - last_sign_in_ip
+  - created_at
+  - updated_at
+  - is_admin
+  records: 
+  - - 1
+    - chris.atgames@gmail.com
+    - $2a$10$3LGKa7Ct91.j1UBmRlRbse10zp9mV5fQWVzaAIU8SzWPkJlHLFhvC
+    - 
+    - 
+    - '2014-10-02 01:55:46.225536'
+    - 15
+    - '2014-10-07 08:46:13.076645'
+    - '2014-10-06 04:30:20.588343'
+    - 127.0.0.1
+    - 127.0.0.1
+    - '2014-09-16 07:24:11.791044'
+    - '2014-10-07 08:46:13.077584'
+    - true
+  - - 2
+    - chihweichang69@gmail.com
+    - $2a$10$nRPCvhtUxS2yJoI7EqJz/uv5DSGZ1QSu.7XmifBqcanh.da1/Ru3m
+    - 
+    - 
+    - 
+    - 10
+    - '2014-09-25 08:29:57.744699'
+    - '2014-09-25 08:29:05.696971'
+    - 127.0.0.1
+    - 127.0.0.1
+    - '2014-09-16 09:22:39.576520'
+    - '2014-09-25 08:29:57.745144'
+    - false
+
+---
+servernodes:
+  columns:
+  - id
+  - name
+  - status
+  - created_at
+  - updated_at
+  - user_id
+  - ip_address
+  records: 
+  - - 1
+    - test001
+    - Ready
+    - '2014-09-30 06:54:33.110523'
+    - '2014-10-02 04:12:33.402851'
+    - 1
+    - 10.0.0.102:4321

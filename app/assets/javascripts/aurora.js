@@ -3067,6 +3067,7 @@ AV.HTTPSource = (function(_super) {
   __extends(HTTPSource, _super);
 
   function HTTPSource(url) {
+    console.log("5566 is here")
     this.url = url;
     this.chunkSize = 1 << 20;
     this.inflight = false;
@@ -3074,6 +3075,7 @@ AV.HTTPSource = (function(_super) {
   }
 
   HTTPSource.prototype.start = function() {
+    console.log("test HTTPSource.prototype.start");
     if (this.length) {
       if (!this.inflight) {
         return this.loop();

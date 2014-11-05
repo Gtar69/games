@@ -18,6 +18,7 @@ class ServernodesController < ApplicationController
   def create
     @servernode = Servernode.create(:name => params[:servernode][:name],
       :status => params[:servernode][:status])
+    # how to get port?
     @servernode.ip_address = request.remote_ip
     if @servernode.save
       render :nothing => true
@@ -38,4 +39,10 @@ class ServernodesController < ApplicationController
       render :edit
     end
   end
+
+  private
+    def servernode_params
+      params.require(:servernode).permit(:name,:status)
+    end
+
 end

@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/jetthoughts/yaml_db.git
+  revision: fb4b6bd7e12de3cffa93e0a298a1e5253d7e92ba
+  ref: fb4b6bd7e12de3cffa93e0a298a1e5253d7e92ba
+  specs:
+    yaml_db (0.2.3)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -35,7 +42,7 @@ GEM
     bootstrap-sass (3.2.0.2)
       sass (~> 3.2)
     builder (3.2.2)
-    byebug (3.4.0)
+    byebug (3.5.1)
       columnize (~> 0.8)
       debugger-linecache (~> 1.2)
       slop (~> 3.6)
@@ -62,10 +69,11 @@ GEM
     colorize (0.7.3)
     columnize (0.8.9)
     debugger-linecache (1.2.0)
-    devise (3.3.0)
+    devise (3.4.0)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 3.2.6, < 5)
+      responders
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
     erubis (2.7.0)
@@ -75,7 +83,7 @@ GEM
     hashie (3.3.1)
     hike (1.2.3)
     i18n (0.6.11)
-    jbuilder (2.1.3)
+    jbuilder (2.2.2)
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
     jquery-rails (3.1.2)
@@ -86,13 +94,14 @@ GEM
     mail (2.6.1)
       mime-types (>= 1.16, < 3)
     method_source (0.8.2)
-    mime-types (2.3)
-    mini_magick (3.7.0)
+    mime-types (2.4.1)
+    mini_magick (3.8.1)
       subexec (~> 0.2.1)
-    minitest (5.4.1)
+    minitest (5.4.2)
     multi_json (1.10.1)
     multi_xml (0.5.5)
     multipart-post (2.0.0)
+    mysql2 (0.3.16)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (2.9.1)
@@ -142,6 +151,8 @@ GEM
     rake (10.3.2)
     rdoc (4.1.2)
       json (~> 1.4)
+    responders (1.1.1)
+      railties (>= 3.2, < 4.2)
     rest-client (1.7.2)
       mime-types (>= 1.16, < 3.0)
       netrc (~> 0.7)
@@ -177,7 +188,7 @@ GEM
     thor (0.19.1)
     thread_safe (0.3.4)
     tilt (1.4.1)
-    turbolinks (2.3.0)
+    turbolinks (2.4.0)
       coffee-rails
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
@@ -201,6 +212,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   mini_magick
+  mysql2
   oauth2
   omniauth
   omniauth-facebook
@@ -215,3 +227,4 @@ DEPENDENCIES
   sqlite3
   turbolinks
   uglifier (>= 1.3.0)
+  yaml_db!
